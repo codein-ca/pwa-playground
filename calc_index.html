@@ -10,7 +10,7 @@
                 shrink-to-fit=yes">
     <title>Web Services Calc</title>
     <!--****************** CSS ******************** -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poiret+One">-->
     <link rel="stylesheet" href="css/calc_mediaQueries.css">
 
@@ -24,72 +24,84 @@
 <body class="flex_column">
 
     <header class="z2 flex_row">
-        <h1 class="flex1">Get your website quotation</h1>
-        <div id="cost_summary" class="flex1">
-            <h2 class="flex1 flex_row">You can have your new website for as low as:<span>$500 CAD</span>
-                <i class="material-icons flex1">assignment</i></h2>
+        <div id="leftheader" class="flex1">
+            Get your quotation now!
         </div>
+        <div id="rightheader" class="flex2">
+            A brand new website for as low as
+            <span>500 CAD</span>
+            <!--<i class="material-icons flex1">assignment</i>-->
+        </div>
+        <!--<div id="header_right_top" class="flex1">
+        </div>-->
     </header>
+
+    <div id="header_hidden" class="flex1">
+        <form>
+            <fieldset>
+                <legend>Send your quotation by email:</legend>
+                <div>
+                    <input type="email" id="exampleInputEmail3"
+                           placeholder="Email">
+                    <button type="submit">
+                        Get your quotation now!
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
 
     <main class="flex_row flex1 z1">
-        <aside id="sideb_right">
-            <div class="flex_row">
-                <div class="pagination flex1 active">Step 1</div>
-                <div class="pagination flex1">Step 2</div>
-                <div class="pagination flex1">Step 3</div>
-                <div class="pagination flex1">Step 4</div>
+        <aside id="sidebar" class="flex_column">
+            <div id="pagination_box" class="flex_row">
+                <div class="page_indicator flex1 active">Step 1</div>
+                <div class="page_indicator flex1">Step 2</div>
+                <div class="page_indicator flex1">Step 3</div>
+                <div class="page_indicator flex1">Step 4</div>
             </div>
-            <figure>
+            <figure id="selectionThumbnail" class="flex_column flex1">
                 <img src="media/blank-box.jpg">
                 <figcaption>Your selection</figcaption>
             </figure>
-            <form>
-                <fieldset>
-                    <legend>Send your quotation by email:</legend>
-                    <div>
-                        <input type="email" id="exampleInputEmail3"
-                               placeholder="Email">
-                        <button type="submit">
-                            Get your quotation now!
-                        </button>
-                    </div>
-                </fieldset>
-            </form>
         </aside>
         <article id="main_content" class="flex1">
-            <div id="select_PageQuantity"
-                 class="selections">
-                <h3 class="flex_row">Step 1 <i class="material-icons">assignment_turned_in</i></h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, recusandae?
-                </p>
+            <div>
+                <h3 class="flex_row active">Step 10
+                    <!--<i class="material-icons">assignment_turned_in</i>-->
+                </h3>
+                <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, deserunt?</p>
             </div>
-            <div id="select_Features"
-                 class="selections">
-                <h3>Step 2 <i class="material-icons">assignment_late</i></h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, recusandae?
-                </p>
+            <div>
+                <h3 class="flex_row">Step 20
+                    <!--<i class="material-icons">assignment_turned_in</i>-->
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga in
+                    perspiciatis placeat repellendus tempora, totam veritatis vero. Dolores, repellendus.</p>
             </div>
-            <div id="select_StaticDynamic"
-                 class="selections">
-                <h3>Step 3 <i class="material-icons">assignment_late</i></h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, recusandae?
-                </p>
+            <div>
+                <h3 class="flex_row">Step 30
+                    <!--<i class="material-icons">assignment_turned_in</i>-->
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque excepturi
+                    exercitationem ipsa magnam sed tempore vitae? Blanditiis, debitis, illum! Commodi dolor doloribus
+                    excepturi facere ipsam labore mollitia natus voluptatibus?</p>
             </div>
-            <div id="select_Maintanance"
-                 class="selections">
-                <h3>Step 4 <i class="material-icons">assignment_late</i></h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, recusandae?
-                </p>
+            <div>
+                <h3 class="flex_row">Step 40
+                    <!--<i class="material-icons">assignment_turned_in</i>-->
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at delectus doloremque
+                    ducimus eaque enim et excepturi exercitationem explicabo illum incidunt ipsum itaque, minima, neque
+                    nesciunt nisi optio perferendis placeat possimus provident quaerat quisquam saepe totam ullam ut,
+                    velit voluptatum?</p>
             </div>
         </article>
     </main>
 <!--https://developers.google.com/speed/libraries/-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-<script src="js/calc_javascript.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <!--<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/calc_javascript.js"></script>
 </body>
 </html>
