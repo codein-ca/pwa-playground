@@ -1,6 +1,6 @@
 # step-by-step-calculator
 
-Calculator app for cost estimation
+Calculator app for cost estimation deployed locally on [GH pages](https://danielriodejaneiro.github.io/step-by-step-calculator/)
 
 ## Setup instructions
 - Create folder on server and files to be served
