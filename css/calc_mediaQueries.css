@@ -249,6 +249,31 @@ header > * {
     color: black;
 }
 
+
+/*CONTENTS
+- SHARED (icons, typography, etc)
+- HEADER
+- LEFT PANEL
+- RIGHT PANEL
+- FOOTER
+- MEDIA QUERIES
+*/
+
+/*- SHARED*/
+.material-icons {
+    display: flex;
+    align-items: center;
+}
+/*- HEADER*/
+
+/*- LEFT PANEL*/
+
+/*- RIGHT PANEL*/
+
+/*- FOOTER*/
+
+/*- MEDIA QUERIES*/
+
 @media screen and (orientation: portrait) and (max-width: 991px) {
     main {
         border-top: none;
