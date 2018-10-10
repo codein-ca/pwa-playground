@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+                initial-scale=1,
+                user-scalable=no,
+                shrink-to-fit=yes">
+    <title>Step-by-step calculator</title>
+    <!--****************** CSS ******************** -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poiret+One">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body class="flex_column">
+
+    <header class="z2 flex_row">
+        <div id="leftheader" class="flex1">
+            Get your quotation now!
+        </div>
+        <div id="rightheader" class="flex2">
+            A brand new website for as low as
+            <span>500 CAD</span>
+            <i class="material-icons flex1">assignment</i>
+        </div>
+        <div id="header_right_top" class="flex1">
+        </div>
+    </header>
+
+    <div id="header_hidden" class="flex1">
+        <form>
+            <fieldset>
+                <legend>Send your quotation by email:</legend>
+                <div>
+                    <input type="email" id="exampleInputEmail3"
+                           placeholder="Email">
+                    <button type="submit">
+                        Get your quotation now!
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <main class="flex_row flex1 z1">
+        <aside id="sidebar" class="flex_column">
+            <div id="pagination_box" class="flex_row">
+                <div class="page_indicator flex1 active">Step 1</div>
+                <div class="page_indicator flex1">Step 2</div>
+                <div class="page_indicator flex1">Step 3</div>
+                <div class="page_indicator flex1">Step 4</div>
+            </div>
+            <figure id="selectionThumbnail" class="flex_column flex1">
+                <img src="media/blank-box.jpg">
+                <figcaption>Your selection</figcaption>
+            </figure>
+        </aside>
+        <article id="main_content" class="flex1">
+            <div>
+                <h3 class="flex_row active">Step 10
+                    <i class="material-icons">assignment_turned_in</i>
+                </h3>
+                <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, deserunt?</p>
+            </div>
+            <div>
+                <h3 class="flex_row">Step 20
+                    <i class="material-icons">assignment_turned_in</i>
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga in
+                    perspiciatis placeat repellendus tempora, totam veritatis vero. Dolores, repellendus.</p>
+            </div>
+            <div>
+                <h3 class="flex_row">Step 30
+                    <i class="material-icons">assignment_turned_in</i>
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque excepturi
+                    exercitationem ipsa magnam sed tempore vitae? Blanditiis, debitis, illum! Commodi dolor doloribus
+                    excepturi facere ipsam labore mollitia natus voluptatibus?</p>
+            </div>
+            <div>
+                <h3 class="flex_row">Step 40
+                    <i class="material-icons">assignment_turned_in</i>
+                </h3>
+                <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at delectus doloremque
+                    ducimus eaque enim et excepturi exercitationem explicabo illum incidunt ipsum itaque, minima, neque
+                    nesciunt nisi optio perferendis placeat possimus provident quaerat quisquam saepe totam ullam ut,
+                    velit voluptatum?</p>
+            </div>
+        </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
