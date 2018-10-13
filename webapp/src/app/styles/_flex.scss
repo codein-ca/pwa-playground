@@ -1,0 +1,15 @@
+.calc-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calc-flexc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calc-f1 {
+  flex: 1;
+}

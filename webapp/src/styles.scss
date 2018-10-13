@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+THIS STYLESHEET AND ITS IMPORTS ARE GLOBAL.
+TRY TO KEEP COMPONENT-SPECIFIC CODE AWAY!!
+
+Contents:
+- page layout (columns, flow)
+- positioning (aligning)
+- smaller box components (cards, images, etc)
+- text and text related selectors (fonts, links, etc)
+- animation and transitions
+*/
+/* all imports of partials */
+@import 'app/styles/text';
+@import 'app/styles/flex';
+
+/* styles for all components */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+router-outlet + * {
+  flex: 1;
+}
