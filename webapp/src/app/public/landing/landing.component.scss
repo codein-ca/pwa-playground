@@ -1,0 +1,17 @@
+.calc-landing {
+  min-height: 200vh;
+
+  background-image: url("../../../assets/jpeg/aws-summit-1920_x_1080.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 640px) {
+    background-image: url("../../../assets/jpeg/aws-summit-375_x_667.jpeg");
+  }
+}
+
+img {
+  width: 100vw;
+  height: 100%;
+}
