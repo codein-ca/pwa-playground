@@ -81,7 +81,8 @@ export class LoadingComponent implements OnInit {
     // const target = document.getElementsByTagName('head')[0];
     // target.scrollIntoView(true);
     // console.info('LOAD BAR', target);
-    setTimeout(() => this.router.navigate(['/home'], {skipLocationChange: true}), 20000)
+    // setTimeout(() => this.router.navigate(['/home'], {skipLocationChange: true}), 1500);
+    setTimeout(() => this.router.navigate(['/home']), 1500);
   }
 
 }
