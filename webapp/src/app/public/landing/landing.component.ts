@@ -11,6 +11,8 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
+    const img = document.getElementsByClassName('initial-homer-container')[0];
+    img.scrollIntoView(true);
   }
 
 }

@@ -1,13 +1,22 @@
-.calc-flex {
+.calc-flex-r {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
-.calc-flexc {
+.calc-flex-c {
   display: flex;
   flex-direction: column;
+}
+
+.calc-flex-a {
+  align-items: center;
+}
+
+.calc-flex-j {
   justify-content: center;
+}
+
+.calc-flex-w {
+  flex-wrap: wrap;
 }
 
 .calc-f1 {

@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'calc-nav',
   template: `
-    <nav class="calc-flex calc-f1">
+    <nav class="calc-flex-r calc-f1">
       <a routerLink="/" class="calc-f1">
         Back to homepage
       </a>
@@ -14,7 +14,6 @@ import {Component, OnInit} from '@angular/core';
   `,
   styles: [`
     nav {
-      border-bottom: 1px solid;
       padding: 1rem;
     }
   `]

@@ -13,11 +13,24 @@ Contents:
 @import 'app/styles/text';
 @import 'app/styles/flex';
 
-/* styles for all components */
+/* main global overrides - angular */
+router-outlet + * {
+  flex: 1;
+}
+
+/* styles for standard selectors - affect all components */
 * {
   margin: 0;
   box-sizing: border-box;
 }
-router-outlet + * {
-  flex: 1;
+
+body {
+  font-size: $font-size;
+  font-family: $font-family;
 }
+
+img {
+  min-height: 100%;
+  max-width: 100%;
+}
+
