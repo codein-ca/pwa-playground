@@ -78,10 +78,10 @@ export class LoadingComponent implements OnInit {
   }
 
   ngOnInit() {
-    const target = document.getElementsByTagName('head')[0];
-    target.scrollIntoView(true);
+    // const target = document.getElementsByTagName('head')[0];
+    // target.scrollIntoView(true);
     // console.info('LOAD BAR', target);
-    setTimeout(() => this.router.navigate(['/home'], {skipLocationChange: true}), 3000)
+    setTimeout(() => this.router.navigate(['/home'], {skipLocationChange: true}), 20000)
   }
 
 }
