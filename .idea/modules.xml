@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/project.iml" filepath="$PROJECT_DIR$/project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../step-by-step-calculator-wiki/.idea/step-by-step-calculator-wiki.iml" filepath="$PROJECT_DIR$/../step-by-step-calculator-wiki/.idea/step-by-step-calculator-wiki.iml" />
     </modules>
   </component>
 </project>

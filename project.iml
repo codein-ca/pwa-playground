@@ -7,6 +7,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
-    <orderEntry type="module" module-name="step-by-step-calculator-wiki" />
   </component>
 </module>
