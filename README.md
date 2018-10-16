@@ -3,7 +3,7 @@
 Calculator app for cost estimation deployed locally on [GH pages](https://danielriodejaneiro.github.io/step-by-step-calculator/)
 
 - See below the basics
-- Check out the [wiki](https://github.com/danielriodejaneiro/step-by-step-calculator.wiki.git) for more
+- Check out the [wiki](https://github.com/danielriodejaneiro/step-by-step-calculator/wiki) for more
 
 ## Up and running
 - Clone repo
