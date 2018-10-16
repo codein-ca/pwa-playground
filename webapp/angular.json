@@ -56,6 +56,11 @@
                 "input": "src/build-extra",
                 "output": "/"
               },
+              {
+                "glob": "robots.txt",
+                "input": "src/build-extra",
+                "output": "/"
+              },
               "src/manifest.json"
             ],
             "styles": [
