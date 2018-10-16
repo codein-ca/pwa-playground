@@ -9,6 +9,8 @@ import {SecureModule} from './secure/secure.module';
 import {HeaderComponent} from "./public/header/header.component";
 import {FooterComponent} from "./public/footer/footer.component";
 import {NavComponent} from "./public/nav/nav.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {NavComponent} from "./public/nav/nav.component";
     AppRoutingModule,
     RouterModule,
     PublicModule,
-    SecureModule
+    SecureModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
