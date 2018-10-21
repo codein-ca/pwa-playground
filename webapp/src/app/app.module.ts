@@ -11,6 +11,7 @@ import {FooterComponent} from "./public/footer/footer.component";
 import {NavComponent} from "./public/nav/nav.component";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     AppRoutingModule,
+    HttpClientModule,
     RouterModule,
     PublicModule,
     SecureModule,

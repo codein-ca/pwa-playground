@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  randomApiKey: 'https://randomapi.com/api/?key=QUWR-UEFQ-KE9T-KE4L&results=2'
+  randomApiKey: 'https://randomuser.me/api/'
 };
 
 /*

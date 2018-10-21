@@ -1,36 +1,55 @@
 <section class="calc-landing">
   <header class="test-with-background calc-flex-c">
-    <h1 tabindex="-1" class="calc-hero">
-      Welcome!
-    </h1>
-    <h2 class="calc-hero-bottom">
-      I am the one and only landing page.
-    </h2>
+    <article class="calc-card">
+      <section class="calc-hero">
+        <h1 tabindex="-1">
+          Welcome!
+        </h1>
+
+      </section>
+      <section class="welcome-banner calc-hero-bottom">
+        <h2>
+          Find new friends today!
+        </h2>
+        <p>
+          Our latest user registered is <span class="user-name">{{user.name}}</span>(more below).
+        </p>
+      </section>
+    </article>
+    <article class="calc-card">
+      <section class="calc-hero">
+        <figure *ngIf="user.photo ===''" class="initial-homer-container">
+          <img src="../../../assets/jpeg/homer.jpg" alt="First Homer should be loaded">
+          <figcaption>First Homer should be loaded already.</figcaption>
+        </figure>
+        <figure *ngIf="user.photo !==''" class="initial-homer-container">
+          <img src="{{user.photo}}" alt="{{user.name}} loaded">
+          <figcaption>I am <span class="user-name">{{user.name}}</span>, I am <span class="user-age">{{user.age}}</span>.
+          </figcaption>
+        </figure>
+      </section>
+      <section class="calc-hero-bottom">
+        <blockquote>
+          I am from <span class="user-location">{{user.location.city}}. It's a city located in {{user.location.state}}, {{user.location.country}}</span><span
+          *ngIf="user.location.country !== 'BR'"> (not Brazil)</span>.
+        </blockquote>
+        <hr>
+        <p *ngIf="user.photo !==''" class="calc-card-message">
+          I am a <span class="user-gender"> {{user.gender}}</span> and I am currently visiting <span class="update-based-on-geolocation">Toronto, Ontario</span>. Actually
+          if you want to know a bit more about me, we could grab a coffee or you could reach out to give me some
+          recommendations over here? I
+          prefer to be contacted by email at <a class="user-email"
+                                                href="mailto:{{user.email}}">{{user.email}}</a>
+          or at night on my phone <a class="user-phone" href="tel:+{{user.phone}}">{{user.phone}}</a>. If you are really
+          old
+          school you can message me at:</p>
+        <address>
+          <span>{{user.location.street}} - {{user.location.city}}</span>
+          <span>{{user.location.state}}, {{user.location.country}} {{user.location.postalCode}}</span>
+        </address>
+      </section>
+    </article>
   </header>
-  <figure class="initial-homer-container">
-    <img src="../../../assets/jpeg/homer.jpg" alt="First Homer should be loaded">
-    <figcaption>First Homer should be loaded already.</figcaption>
-  </figure>
-  <hr>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi blanditiis corporis culpa deleniti, dolorem
-    doloremque doloribus error eveniet facilis, minus molestiae porro possimus qui quos ratione rem soluta ullam?
-  </p>
-  <hr>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi blanditiis corporis culpa deleniti, dolorem
-    doloremque doloribus error eveniet facilis, minus molestiae porro possimus qui quos ratione rem soluta ullam?
-  </p>
-  <hr>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi blanditiis corporis culpa deleniti, dolorem
-    doloremque doloribus error eveniet facilis, minus molestiae porro possimus qui quos ratione rem soluta ullam?
-  </p>
-  <hr>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi blanditiis corporis culpa deleniti, dolorem
-    doloremque doloribus error eveniet facilis, minus molestiae porro possimus qui quos ratione rem soluta ullam?
-  </p>
   <hr>
   <figure>
     <img src="../../../assets/jpeg/homer_again.jpg" alt="This should not be loaded until visible">

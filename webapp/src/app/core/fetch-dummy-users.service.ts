@@ -2,35 +2,30 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Observable, throwError } from "rxjs";
 import { environment } from "../../environments/environment";
+import { OriginalRandomUser } from "../types/random-user";
+import { catchError } from "rxjs/operators";
 
-@Injectable({
+@Injectable( {
   providedIn: 'root'
-})
+} )
 export class FetchDummyUsersService {
 
-  results;
-
-  constructor(private http: HttpClient) {
-    console.log('Constructor with results = ', this.results);
+  constructor( private http: HttpClient ) {
   }
 
-  getUsers(){
-    // https://randomapi.com/api/?key=ABCD-1234-EFGH-5678&ref=1234abcd
-    this.http.get(environment.randomApiKey).subscribe(
-      x => {
-        this.results = x;
-        console.info(this.results);
-      },
-          x => console.error(x),
-          () => console.info('Complete.'));
-      }
+  getCustomer(): Observable<OriginalRandomUser> {
+    return this.http.get<OriginalRandomUser>( environment.randomApiKey )
+    .pipe(
+      catchError( this.handleError )
+    );
+  }
 
-  private handleError(error: any) {
-    console.error('server error:', error);
-    if (error.error instanceof Error) {
+  private handleError( error: any ) {
+    console.error( '[SERVICE] server error:', error );
+    if ( error.error instanceof Error ) {
       const errMessage = error.error.message;
-      return throwError(errMessage);
+      return throwError( errMessage );
     }
-    return throwError(error || 'Node.js server error');
+    return throwError( error || '[SERVICE] Node.js server error' );
   }
 }
