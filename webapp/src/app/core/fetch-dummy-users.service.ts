@@ -13,7 +13,7 @@ export class FetchDummyUsersService {
   constructor( private http: HttpClient ) {
   }
 
-  getCustomer(): Observable<OriginalRandomUser> {
+  getRandomUser(): Observable<OriginalRandomUser> {
     return this.http.get<OriginalRandomUser>( environment.randomApiKey )
     .pipe(
       catchError( this.handleError )

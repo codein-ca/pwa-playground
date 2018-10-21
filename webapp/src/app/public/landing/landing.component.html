@@ -1,13 +1,13 @@
-<section class="calc-landing">
+<section class="calc-landing-root">
   <header class="test-with-background calc-flex-c">
-    <article class="calc-card">
-      <section class="calc-hero">
+    <article class="calc-card welcome-banner">
+      <section class="calc-card-top">
         <h1 tabindex="-1">
           Welcome!
         </h1>
 
       </section>
-      <section class="welcome-banner calc-hero-bottom">
+      <section class="welcome-banner calc-card-bottom">
         <h2>
           Find new friends today!
         </h2>
@@ -17,18 +17,18 @@
       </section>
     </article>
     <article class="calc-card">
-      <section class="calc-hero">
-        <figure *ngIf="user.photo ===''" class="initial-homer-container">
+      <section class="calc-card-top">
+        <figure *ngIf="user.photo ===''" class="calc-card-image">
           <img src="../../../assets/jpeg/homer.jpg" alt="First Homer should be loaded">
           <figcaption>First Homer should be loaded already.</figcaption>
         </figure>
-        <figure *ngIf="user.photo !==''" class="initial-homer-container">
+        <figure *ngIf="user.photo !==''" class="calc-card-image">
           <img src="{{user.photo}}" alt="{{user.name}} loaded">
           <figcaption>I am <span class="user-name">{{user.name}}</span>, I am <span class="user-age">{{user.age}}</span>.
           </figcaption>
         </figure>
       </section>
-      <section class="calc-hero-bottom">
+      <section class="calc-card-bottom">
         <blockquote>
           I am from <span class="user-location">{{user.location.city}}. It's a city located in {{user.location.state}}, {{user.location.country}}</span><span
           *ngIf="user.location.country !== 'BR'"> (not Brazil)</span>.

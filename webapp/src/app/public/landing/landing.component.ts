@@ -37,7 +37,7 @@ export class LandingComponent implements OnInit {
   }
 
   processCustomer() {
-    this.userService.getCustomer().subscribe(
+    this.userService.getRandomUser().subscribe(
       ( next: OriginalRandomUser ) => {
         // console.info( 'I AM THE PAYLOAD (NEXT):', next );
         this.user = {
