@@ -1,23 +1,26 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'calc-nav',
   template: `
-    <nav class="calc-flex-r calc-f1">
-      <a routerLink="/" class="calc-f1">
-        Back to homepage
-      </a>
-      <a routerLink="/login" class="calc-f1">
-        Login/Logout
-      </a>
+    <nav class="calc-flex-r">
+      <section class="calc-link-container calc-f1">
+        <a routerLink="/">
+          Restart
+        </a>
+        <a routerLink="/secure/dashboard">
+          Dashboard
+        </a>
+        <a routerLink="/home">
+          Home
+        </a>
+      </section>
+
+      <input type="button" routerLink="/login" class="login" value="Login">
     </nav>
   `,
-  styles: [`
-    nav {
-      padding: 1rem;
-    }
-  `]
-})
+  styleUrls: ['nav.component.scss']
+} )
 export class NavComponent implements OnInit {
 
   constructor() {

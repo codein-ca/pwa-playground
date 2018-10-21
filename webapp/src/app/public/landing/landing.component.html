@@ -1,6 +1,6 @@
-<section class="calc-landing-root">
-  <header class="test-with-background calc-flex-c">
-    <article class="calc-card welcome-banner">
+<section class="calc-landing-root calc-flex-c">
+  <!--<section class="test-with-background calc-flex-c">-->
+    <article class="calc-card welcome-banner" tabindex="0">
       <section class="calc-card-top">
         <h1 tabindex="-1">
           Welcome!
@@ -16,7 +16,7 @@
         </p>
       </section>
     </article>
-    <article class="calc-card">
+    <article class="calc-card" tabindex="-1">
       <section class="calc-card-top">
         <figure *ngIf="user.photo ===''" class="calc-card-image">
           <img src="../../../assets/jpeg/homer.jpg" alt="First Homer should be loaded">
@@ -49,12 +49,12 @@
         </address>
       </section>
     </article>
-  </header>
-  <hr>
-  <figure>
-    <img src="../../../assets/jpeg/homer_again.jpg" alt="This should not be loaded until visible">
-    <figcaption>
-      This should not be loaded until visible (or after some interval after page load was completed)
-    </figcaption>
-  </figure>
+  <!--</section>-->
+  <!--<hr>-->
+  <!--<figure>-->
+    <!--<img src="../../../assets/jpeg/homer_again.jpg" alt="This should not be loaded until visible">-->
+    <!--<figcaption>-->
+      <!--This should not be loaded until visible (or after some interval after page load was completed)-->
+    <!--</figcaption>-->
+  <!--</figure>-->
 </section>

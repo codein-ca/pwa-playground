@@ -1,29 +1,32 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'calc-header',
   template: `
-    <header class="calc-flex-c calc-f1">
+    <!--<header class="calc-flex-c calc-f1">-->
       <calc-nav></calc-nav>
-    </header>
+    <!--</header>-->
   `,
   styles: [`
     :host {
-      display: flex;
-
-      box-shadow: 0 0 10px #00000099;
+      /*p*/
       position: fixed;
       top: 0;
       left: 0;
+      /*b*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100vw;
+      min-height: 100px;
+      /*t*/
+      /*v*/
+      box-shadow: 0 0 10px #00000099;
       z-index: 100;
       background-color: white;
     }
-    header {
-      /*margin: -2rem -2rem 1rem;*/
-    }
   `]
-})
+} )
 export class HeaderComponent implements OnInit {
 
   constructor() {

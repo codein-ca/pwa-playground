@@ -5,17 +5,17 @@
   }
 }
 
-.test-with-background {
-  min-height: 50vh;
+//.test-with-background {
+//  min-height: 50vh;
   //background-image: url("../../../assets/jpeg/aws-summit-1920_x_1080.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
 
-  @media screen and (max-width: 640px) {
+  //@media screen and (max-width: 640px) {
     //background-image: url("../../../assets/jpeg/aws-summit-375_x_667.jpeg");
-  }
-}
+  //}
+//}
 
 .calc-card {
   margin-bottom: 2rem;
@@ -156,7 +156,7 @@
 }
 
 .user-email, .user-phone {
-  display: inline-block;
+  display: inline-flex;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: monospace;

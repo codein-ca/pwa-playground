@@ -1,7 +1,13 @@
 .main-block {
   min-height: calc(100vh - 3rem - 5px);
-  margin-top: calc(3rem + 5px);
+  margin-top: 136px;
   text-align:center;
   color: #595959;
+  padding: 0 5px;
+
+  @media screen and (min-width: 640px) {
+    margin-top: 100px;
+    padding: 1rem;
+  }
 }
 
